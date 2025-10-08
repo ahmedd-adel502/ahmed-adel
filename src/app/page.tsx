@@ -1,9 +1,9 @@
 'use client'
-import { faBootstrap, faCss, faCss3Alt, faDev, faGit, faGithub, faHtml5, faJs, faLinkedin, faReact, faSass, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { faBootstrap, faCss, faGithub, faHtml5, faJs, faLinkedin, faReact, faSass, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import * as React from "react";
 import Typed from "typed.js";
-// @ts-ignore
+// @ts-expect-error
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Image from "next/image";
@@ -23,11 +23,10 @@ import mealify from "../../assets/Mealify.png"
 import yummy from "../../assets/Yummy.png"
 import loginApp from "../../assets/LoginApp.png"
 import WeatherApp from "../../assets/WeatherApp.png"
-import gridMaster from "../../assets/GridMaster.png"
 import bookMarker from "../../assets/BookMarker.png"
 import FrameWork from "../../assets/FrameWork.png"
 import QuotesApp from "../../assets/Quotes.png"
-export default function page(){
+export default function Page(){
 
 
     const el = React.useRef(null);
@@ -63,7 +62,7 @@ export default function page(){
         return () => {
           window.removeEventListener('scroll',handleScroll);
         }
-      }, [scroll]);
+      }, []);
 
       React.useEffect(() => {
         const homeContent = document.querySelector('.home-content');
