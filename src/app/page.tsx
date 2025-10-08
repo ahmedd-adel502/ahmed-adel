@@ -1,9 +1,10 @@
 'use client'
+/* eslint-disable react/no-unescaped-entities */
 import { faBootstrap, faCss, faGithub, faHtml5, faJs, faLinkedin, faReact, faSass, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import * as React from "react";
 import Typed from "typed.js";
-// @ts-expect-error
+// @ts-expect-error no types
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Image from "next/image";
